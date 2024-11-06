@@ -167,6 +167,7 @@ function App() {
 
   const renderWeekView = () => {
     const weekDates = getWeekDates(currentDate);
+    console.log(filteredEvents);
     return (
       <VStack data-testid="week-view" align="stretch" w="full" spacing={4}>
         <Heading size="md">{formatWeek(currentDate)}</Heading>
